@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Партнерська програма — Версія 1</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f7f8fa;
+  }
+  header {
+    background: linear-gradient(135deg, #2dd4bf 0%, #06b6d4 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  header h1 { font-size: 2.4rem; margin-bottom: 8px; }
+  header .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  nav {
+    background: white;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  nav a {
+    color: #06b6d4;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: #ecfeff; }
+  nav a.active { background: #06b6d4; color: white; }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  .content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+  }
+  .content h2 {
+    color: #06b6d4;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+  }
+  .content p { margin-bottom: 16px; color: #444; }
+  .terms {
+    list-style: none;
+    margin: 20px 0;
+  }
+  .terms li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eef1ff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .terms li:last-child { border-bottom: none; }
+  .terms .label { color: #666; }
+  .terms .value { font-weight: 600; color: #06b6d4; }
+  .cta {
+    background: linear-gradient(135deg, #2dd4bf 0%, #06b6d4 100%);
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .cta:hover { transform: scale(1.05); }
+  footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+    margin-top: 60px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge">Версія 1</span>
+  <h1>Базова партнерська програма</h1>
+  <p>Простий старт з фіксованою комісією</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../">Головна</a></li>
+    <li><a href="./" class="active">v1 — Базова</a></li>
+    <li><a href="../v2/">v2 — Розширена</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="content">
+    <h2>Про версію 1</h2>
+    <p>Базова версія партнерської програми створена для тих, хто хоче спробувати свої сили в реферальному маркетингу. Простий вступ, зрозумілі умови та швидкі виплати — все, що потрібно для впевненого старту.</p>
+    <p>Ви отримуєте унікальне реферальне посилання та фіксований відсоток від кожного клієнта, якого залучите.</p>
+  </section>
+
+  <section class="content">
+    <h2>Умови участі</h2>
+    <ul class="terms">
+      <li><span class="label">Комісія</span><span class="value">15%</span></li>
+      <li><span class="label">Мінімальна виплата</span><span class="value">500 грн</span></li>
+      <li><span class="label">Період виплат</span><span class="value">Раз на місяць</span></li>
+      <li><span class="label">Cookies</span><span class="value">30 днів</span></li>
+      <li><span class="label">Тип винагороди</span><span class="value">Разова</span></li>
+    </ul>
+  </section>
+
+  <section class="content">
+    <h2>Як почати</h2>
+    <p><strong>Крок 1.</strong> Зареєструйтесь у партнерському кабінеті та підтвердьте email.</p>
+    <p><strong>Крок 2.</strong> Отримайте реферальне посилання та промо-матеріали.</p>
+    <p><strong>Крок 3.</strong> Діліться посиланням з друзями, у соцмережах або на своєму сайті.</p>
+    <p><strong>Крок 4.</strong> Отримуйте 15% від кожної покупки за вашим посиланням.</p>
+    <a href="#" class="cta" onclick="alert('Демо-кнопка'); return false;">Приєднатися до v1</a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Партнерська програма. Версія 1.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Партнерська програма — Версія 2</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f7f8fa;
+  }
+  header {
+    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  header h1 { font-size: 2.4rem; margin-bottom: 8px; }
+  header .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  nav {
+    background: white;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  nav a {
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: #fef2f2; }
+  nav a.active { background: #ef4444; color: white; }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  .content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+  }
+  .content h2 {
+    color: #ef4444;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+  }
+  .content p { margin-bottom: 16px; color: #444; }
+  .levels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .level {
+    border: 2px solid #fef2f2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  .level:hover { border-color: #ef4444; transform: translateY(-2px); }
+  .level .name { font-weight: 700; color: #ef4444; margin-bottom: 8px; }
+  .level .commission { font-size: 2rem; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
+  .level .desc { font-size: 0.9rem; color: #666; }
+  .terms {
+    list-style: none;
+    margin: 20px 0;
+  }
+  .terms li {
+    padding: 12px 0;
+    border-bottom: 1px solid #fef2f2;
+    display: flex;
+    justify-content: space-between;
+  }
+  .terms li:last-child { border-bottom: none; }
+  .terms .label { color: #666; }
+  .terms .value { font-weight: 600; color: #ef4444; }
+  .cta {
+    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .cta:hover { transform: scale(1.05); }
+  .perks { display: grid; gap: 12px; margin: 20px 0; }
+  .perk { display: flex; align-items: start; gap: 12px; }
+  .perk .check {
+    background: #ef4444;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.85rem;
+  }
+  footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+    margin-top: 60px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge">Версія 2 · PRO</span>
+  <h1>Розширена партнерська програма</h1>
+  <p>Багаторівнева система для досвідчених партнерів</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../">Головна</a></li>
+    <li><a href="../v1/">v1 — Базова</a></li>
+    <li><a href="./" class="active">v2 — Розширена</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="content">
+    <h2>Про версію 2</h2>
+    <p>Розширена версія партнерської програми пропонує багаторівневу систему винагород, де ваш відсоток зростає разом з результатами. Чим більше клієнтів — тим вища комісія та більше бонусів.</p>
+    <p>Версія 2 включає рекурентні платежі, персонального менеджера та доступ до закритих інструментів аналітики.</p>
+  </section>
+
+  <section class="content">
+    <h2>Рівні комісії</h2>
+    <div class="levels">
+      <div class="level">
+        <div class="name">Старт</div>
+        <div class="commission">20%</div>
+        <div class="desc">До 10 клієнтів</div>
+      </div>
+      <div class="level">
+        <div class="name">Срібло</div>
+        <div class="commission">25%</div>
+        <div class="desc">11–50 клієнтів</div>
+      </div>
+      <div class="level">
+        <div class="name">Золото</div>
+        <div class="commission">30%</div>
+        <div class="desc">51+ клієнтів</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <h2>Що ви отримуєте</h2>
+    <div class="perks">
+      <div class="perk"><span class="check">✓</span><div>Рекурентні виплати — отримуйте відсоток поки клієнт залишається з нами</div></div>
+      <div class="perk"><span class="check">✓</span><div>Персональний менеджер для консультацій та підтримки</div></div>
+      <div class="perk"><span class="check">✓</span><div>Доступ до закритих вебінарів та навчальних курсів</div></div>
+      <div class="perk"><span class="check">✓</span><div>Розширена аналітика з джерелами трафіку та воронкою</div></div>
+      <div class="perk"><span class="check">✓</span><div>Кастомні промо-коди для ваших клієнтів</div></div>
+      <div class="perk"><span class="check">✓</span><div>Пріоритетна технічна підтримка 24/7</div></div>
+    </div>
+  </section>
+
+  <section class="content">
+    <h2>Умови участі</h2>
+    <ul class="terms">
+      <li><span class="label">Комісія</span><span class="value">20–30%</span></li>
+      <li><span class="label">Тип винагороди</span><span class="value">Рекурентна</span></li>
+      <li><span class="label">Мінімальна виплата</span><span class="value">200 грн</span></li>
+      <li><span class="label">Період виплат</span><span class="value">Двічі на місяць</span></li>
+      <li><span class="label">Cookies</span><span class="value">90 днів</span></li>
+      <li><span class="label">Бонус за реєстрацію</span><span class="value">+5% перший місяць</span></li>
+    </ul>
+    <a href="#" class="cta" onclick="alert('Демо-кнопка'); return false;">Приєднатися до v2</a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Партнерська програма. Версія 2 PRO.</p>
+</footer>
+
+</body>
+</html>

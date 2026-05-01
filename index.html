@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Партнерська програма — Головна</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f7f8fa;
+  }
+  header {
+    background: linear-gradient(135deg, #4a6cf7 0%, #6b3df7 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  header h1 { font-size: 2.8rem; margin-bottom: 16px; }
+  header p { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+  nav {
+    background: white;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  nav a {
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: #eef1ff; }
+  nav a.active { background: #4a6cf7; color: white; }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+  .card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+  .card:hover { transform: translateY(-4px); }
+  .card h3 { color: #4a6cf7; margin-bottom: 12px; font-size: 1.3rem; }
+  .card .icon { font-size: 2.5rem; margin-bottom: 16px; }
+  .versions {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .versions h2 { margin-bottom: 24px; color: #1a1a1a; }
+  .version-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .version-card {
+    border: 2px solid #eef1ff;
+    padding: 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+  .version-card:hover { border-color: #4a6cf7; transform: translateY(-2px); }
+  .version-card h4 { color: #4a6cf7; margin-bottom: 8px; }
+  footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+    margin-top: 60px;
+  }
+  @media (max-width: 600px) {
+    .version-list { grid-template-columns: 1fr; }
+    header h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Партнерська програма</h1>
+  <p>Розвивайте свій бізнес разом з нами — приєднуйтесь до мережі партнерів та отримуйте винагороду за рекомендації.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="./" class="active">Головна</a></li>
+    <li><a href="./v1/">v1 — Базова</a></li>
+    <li><a href="./v2/">v2 — Розширена</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="features">
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Прозорі умови</h3>
+      <p>Чіткі правила співпраці без прихованих платежів. Ви завжди знаєте, скільки заробляєте.</p>
+    </div>
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Висока винагорода</h3>
+      <p>До 30% комісії від кожного успішного залучення клієнта. Виплати щомісяця без затримок.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Особистий кабінет</h3>
+      <p>Слідкуйте за статистикою в реальному часі. Аналізуйте конверсію та оптимізуйте свої канали.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎓</div>
+      <h3>Навчальні матеріали</h3>
+      <p>Доступ до бази знань, вебінарів та персонального менеджера для швидкого старту.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🚀</div>
+      <h3>Маркетингові інструменти</h3>
+      <p>Готові банери, посилання та промо-матеріали для просування у соцмережах та на сайті.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>Підтримка 24/7</h3>
+      <p>Команда готова відповісти на будь-яке питання та допомогти у вирішенні проблем.</p>
+    </div>
+  </section>
+
+  <section class="versions">
+    <h2>Версії програми</h2>
+    <p style="margin-bottom: 24px; color: #666;">Оберіть версію партнерської програми, яка підходить саме вам:</p>
+    <div class="version-list">
+      <a href="./v1/" class="version-card">
+        <h4>Версія 1 — Базова</h4>
+        <p>Класична схема з фіксованою комісією. Ідеально для початківців.</p>
+      </a>
+      <a href="./v2/" class="version-card">
+        <h4>Версія 2 — Розширена</h4>
+        <p>Багаторівнева система з бонусами та преміум-перевагами для досвідчених партнерів.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Партнерська програма. Усі права захищені.</p>
+</footer>
+
+</body>
+</html>
